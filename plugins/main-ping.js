@@ -32,7 +32,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         const end = new Date().getTime();
         const responseTime = (end - start) / 1000;
 
-        const text = `> *NEBULA-MD SPEED: ${responseTime.toFixed(2)}ms ${reactionEmoji}*`;
+        const text = `> *‎Ⓙ🅞Ⓢ🅗_🄺🅸🄽🅶_ⓉⒺⒸⒽ SPEED: ${responseTime.toFixed(2)}ms ${reactionEmoji}*`;
 
         await conn.sendMessage(from, {
             text,
@@ -41,8 +41,8 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363288177044023@newsletter',
-                    newsletterName: "Rɪᴅᴢ Cᴏᴅᴇʀ",
+                    newsletterJid: '120363347365643318@newsletter',
+                    newsletterName: "‎Ⓙ🅞Ⓢ🅗_🄺🅸🄽🅶",
                     serverMessageId: 143
                 }
             }
@@ -69,7 +69,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const message = await conn.sendMessage(from, { text: '*PINGING...*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*🔥 NEBULA-MD SPEED : ${ping}ms*` }, { quoted: message })
+        await conn.sendMessage(from, { text: `*🔥 ‎Ⓙ🅞Ⓢ🅗_🄺🅸🄽🅶_ⓉⒺⒸⒽ SPEED : ${ping}ms*` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
